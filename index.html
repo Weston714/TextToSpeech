@@ -1,20 +1,33 @@
 <!DOCTYPE html>
-    <head>
-        <style>
-        index {
-            border-radius=25px
-        }
-        </style>
-    </head>
-    <html>
-        <body>
-            <div class="index">
-                <input type="text">
-                <button type="button" text="Text to Speach">
-                    <p> Text to Speach </p>
-                </button>
-
-            </div>
-                
-        </body>
-    </html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Browser voices</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="speechSynthesis.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Browser voices</h1>
+    </header>
+    <main>
+      <form class="input" id="voice-form">
+        <div class="field">
+          <label for="speech">Type something</label>
+          <input type="text" name="speech" id="speech" required />
+        </div>
+        <div class="field">
+          <label for="voices">Choose a voice</label>
+          <select name="voices" id="voices"></select>
+        </div>
+        <button>Say it!</button>
+      </form>
+    </main>
+    <footer>
+      <p>
+        Built with 🎧 by <a href="https://twitter.com/philnash">philnash</a>
+      </p>
+    </footer>
+    </body>
+</html>
