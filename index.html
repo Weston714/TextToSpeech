@@ -46,14 +46,17 @@
       <h1 class="header">Text to speech</h1>
     </header>
     <main>
+    <!--this is the text box and some of the code that points the text to speech software to the textbox-->
         <form class="input" id="voice-form">
         <div class="field" id="textbox">
          <!-- <label for="speech">Say Hi</label>-->
           <input type="text" name="speech" id="speech" required placeholder="Type Something"/>
         </div>
         <br>
+        <!--this is the putton that makes the text to speech read what is in the text box-->
         <button class="button">Say it!</button>
         <div class="field" id>
+        <!--this is to select the diffrent voices I have made this invisible because it can brake the code somethimes-->
           <label for="voices" style="display: none;">Choose a voice</label>
           <select name="voices" id="voices" style="display: none;"></select>
         </div>
