@@ -1,25 +1,60 @@
 <!DOCTYPE html>
-    <head>
-        <link rel="stylesheet" href="index.css">
-        <style>
-        .index {
-            border-radius: 10px;
-            border: 0;
-        }
-        .textbox {
-            border-radius: 5px;
-        }
-        </style>
-    </head>
-    <html>
-        <body>
-            <div class="index">
-                <input type="text" class="textbox">
-                <button type="button" class="index">
-                    <p> Text to Speech </p>
-                </button>
-
-            </div>
-                
-        </body>
-    </html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Browser voices</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="speechSynthesis.js"></script>
+    <style>
+    header {
+    text-align: center;
+}
+    input {
+        text-align: center;
+         border-radius: 5px;
+        border-color: #000000;
+        
+    }
+    body {
+        text-align: center;
+        border-radius: 5px;
+        border-style: solid;
+        padding: 50px;
+        padding-bottom: 300px;
+        background-color: #ffffff;
+    }
+    button {
+        border: 0;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: #c3e86d;
+    }
+    html {
+        padding:50px;
+        background-image: url('page1.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 class="header">Text to speech</h1>
+    </header>
+    <main>
+        <form class="input" id="voice-form">
+        <div class="field" id="textbox">
+         <!-- <label for="speech">Say Hi</label>-->
+          <input type="text" name="speech" id="speech" required placeholder="Type Something"/>
+        </div>
+        <br>
+        <button class="button">Say it!</button>
+        <div class="field" id>
+          <label for="voices" style="display: none;">Choose a voice</label>
+          <select name="voices" id="voices" style="display: none;"></select>
+        </div>
+      </form>
+    </main>
+    </body>
+</html>
